@@ -68,7 +68,7 @@ public class ListAdapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.putExtra("file", (int) v.getTag());
+                intent.putExtra("file_id", (int) v.getTag());
                 context.setResult(context.RESULT_OK, intent);
                 context.finish();
             }
